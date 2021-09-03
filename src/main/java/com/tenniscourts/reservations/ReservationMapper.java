@@ -3,8 +3,10 @@ package com.tenniscourts.reservations;
 import org.mapstruct.InheritInverseConfiguration;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
+import org.springframework.stereotype.Component;
 
 @Mapper(componentModel = "spring")
+@Component
 public interface ReservationMapper {
 
     Reservation map(ReservationDTO source);
